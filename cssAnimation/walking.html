@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframes animation</title>
+    <style>
+        #man {
+            background-image: url(images/walking.png);
+            width: 120px;
+            height: 183px;
+            animation: walk 1s steps(8) infinite;
+        }
+        #wrapper
+        {
+            animation: moveMan 4s ease infinite;
+        }
+        #tree
+        {
+            background-image: url(images/tree.png);
+            width: 300px;
+            height: 252px;
+        }
+        @keyframes walk{
+            100%{
+                background-position: -960px;
+            }
+        }
+        @keyframes moveMan {
+            to {
+                transform: translate(800px);
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+        <div id="wrapper">
+            <div id="tree">
+        <div id="man"> </div>
+            </div>
+            </div>
+
+
+</body>
+
+</html>
